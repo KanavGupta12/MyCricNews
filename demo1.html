@@ -1,0 +1,316 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>web page creations</title>
+<link rel="stylesheet" type="text/css" href="style3.css">
+<style>
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+	*{
+margin: 0;
+padding: 0;
+font-family: Century Gothic;
+}
+body{
+
+
+	background-image:url("indiasquad.jpg");
+	width:100%;
+	height:90vh;
+	object-fit: cover;
+
+
+background-size: cover;
+background-position: center;
+
+}
+.active {
+  background-color: #4CAF50;
+}
+.active2 {
+  background-color: #111;
+}
+.anish{
+background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("bg.jpg");
+height: 100vh;
+
+background-size: cover;
+background-position: center;
+
+
+}
+ul{
+float: right;
+list-style-type: none;
+margin-top: 30px;
+
+}
+ul li{
+display: inline-block;
+}
+ul li a{
+text-decoration: none;
+color: #fff;
+padding: 5px 20px;
+border: 2px solid transparent;
+transition: 0.6s ease;
+
+}
+ul li a:hover{
+background-color: white;
+color: black;
+}
+.logo img{
+float: left;
+width: 130px;
+height: auto;
+margin-left: 25px;
+}
+.main{
+max-width: 1200px;
+margin: auto;
+}
+.title{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+
+}
+.title h1{
+color:white;
+font-size: 70px;
+}
+.title h3{
+color:white;
+font-size: 20px;
+text-decoration: none;
+}
+.button{
+position: absolute;
+top: 64%;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+.btn{
+border:1px solid #fff;
+padding:10px 30px;
+color:white;
+text-decoration: none;
+transition: 0.6s ease;
+}
+.btn:hover{
+background-color: white;
+color: black;
+}
+.facebook
+{
+  position:absolute;
+  background-color:transparent;
+  height:5%;
+  bottom:10px;
+  left:690px;
+  cursor: pointer;
+}
+.pin
+{
+  position:absolute;
+  background-color:transparent;
+  height:5%;
+  bottom:10px;
+  left:740px;
+  cursor: pointer;
+}
+.insta
+{
+  position:absolute;
+  background-color:transparent;
+  height:5%;
+  bottom:10px;
+  right:690px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+<header>  
+<div class="anish">
+
+<div class="main">
+<ul>
+<li><a href="demo1.html" class="active">HOME</a></li>
+<li><a onclick="document.getElementById('id01').style.display='block'">SIGNUP</a></li>
+<li><a href="samester.html">DISCOVER</a></li>
+<li><a href="contact.html">CONTACT</a></li>
+<li><a class="active2" href="loginsignup.html">Member?</a></li>
+</ul>
+</header>
+<div class="title">
+<h1>myCRICKNEWS</h1>
+<center><h3>For all UPDATES<h3></center>
+    </div>
+    <div class="button">
+    <a href="https://www.cricbuzz.com/" class="btn">NEWS</a>
+    <a href="cricket.html" class="btn">LEARN MORE</a>
+    
+    </div>
+    <a href="https://www.facebook.com/Mahi-380717915760592/notifications/" target="_blank"><img src="facebook.png" class="facebook"></img></a>
+    <a href="https://in.pinterest.com/" target="_blank"><img src="pin.png" class="pin"></img></a>
+    <a href="https://www.instagram.com/msdianz.world/" target="_blank"><img src="insta.png" class="insta"></img></a>
+    </div>
+    
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+
+</body>
+</html>
